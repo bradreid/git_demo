@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+gem 'haml'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -21,6 +22,17 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :test do
+  gem 'mocha', '~> 0.12.1', require: false
+  gem 'shoulda-context', '~> 1.0.0'
+  gem 'timecop', '~> 0.3.4'
+  gem 'testrbl'
+  gem 'capybara', '~> 1.1.2'
+  gem 'capybara-webkit', '~> 0.12.1'
+  gem 'database_cleaner', '~> 0.8.0'
+  gem 'capybara-screenshot', '0.2.2'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
