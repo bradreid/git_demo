@@ -4,6 +4,10 @@ class UsersController < ApplicationController
   end
 
   def uddate
-    
+
+  end
+
+  def edit
+
   end
 end
